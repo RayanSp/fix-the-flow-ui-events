@@ -85,6 +85,7 @@ a:nth-of-type(12) {
 .colorchange {
   animation-name: colorchange;
   animation-iteration-count: 1;
+  transition: 2s;
   background-color: red;
 }
 
@@ -94,8 +95,8 @@ a:nth-of-type(12) {
 .fontsize {
   animation-name: sizechange;
   animation-iteration-count: 1;
-  transition: 1.5s ease-in-out;
   transform: scale(1.25);
+  transition: 1.5s ease-in-out;
 }
 
 /* spin */
@@ -113,31 +114,49 @@ a:nth-of-type(12) {
 .shake {
   animation-name: shake;
   animation-iteration-count: 1;
-  transition: 2s;
-}
-
-a:nth-of-type(4) {
   animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
-  position: relative;
+  animation-duration: .5s;
 }
 
-  @keyframes shake {    
-    0% {
-      transform: scale(1, 1) rotate(-10deg);
-    }
-    20% {
-      transform: scale(1, 1) rotate(10deg);
-    }
-    40% {
-      transform: scale(1, 1) rotate(-10deg);
-    }
-    60% {
-      transform: scale(1, 1) rotate(10deg);
-    }
-    80% {
-      transform: scale(1, 1) rotate(-10deg);
-    }
-    100% {
-      transform: scale(1, 1) rotate(0deg);
-    }
+  @keyframes shake { 
+  0% {
+    transform: scale(1, 1) rotate(-10deg);
   }
+  20% {
+    transform: scale(1, 1) rotate(10deg);
+  }
+  40% {
+    transform: scale(1, 1) rotate(-10deg);
+  }
+  60% {
+    transform: scale(1, 1) rotate(10deg);
+  }
+  80% {
+    transform: scale(1, 1) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+}
+
+
+/* flip */
+
+.flip {
+  animation-name: flip;
+  animation-iteration-count: 1;
+  transform: rotateY(360deg);
+  transition: 1s ease-in-out;
+}
+/* 
+@keyframes flip {
+  0% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+} */
