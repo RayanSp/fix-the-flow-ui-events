@@ -62,3 +62,26 @@ flipelement.addEventListener('transitionend', flip)
 function flip() {
   flipelement.classList.toggle('flip')
 }
+
+
+// fontbold
+
+let fontelement = document.querySelector('a:nth-of-type(6)')
+
+fontelement.addEventListener('click', fontbold)
+fontelement.addEventListener('transitionend', fontbold)
+
+function fontbold() {
+  fontelement.classList.toggle('fontbold')
+}
+
+// shrink
+
+let shrinkelement = document.querySelector('a:nth-of-type(7)')
+
+shrinkelement.addEventListener('click', shrink)
+shrinkelement.addEventListener('animationend', shrink)
+
+function shrink() {
+  shrinkelement.classList.toggle('shrink')
+}
