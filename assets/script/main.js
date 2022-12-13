@@ -97,3 +97,26 @@ frontflipelement.addEventListener('transitionend', frontflip)
 function frontflip() {
   frontflipelement.classList.toggle('frontflip')
 }
+
+// freestyle
+
+let freestyleelement = document.querySelector('a:nth-of-type(9)')
+
+freestyleelement.addEventListener('click', freestyle)
+freestyleelement.addEventListener('animationend', freestyle)
+
+function freestyle() {
+  freestyleelement.classList.toggle('freestyle')
+}
+
+
+// jumping 
+
+let jumpingelement = document.querySelector('a:nth-of-type(10)')
+
+jumpingelement.addEventListener('click', jumping)
+jumpingelement.addEventListener('animationend', jumping)
+
+function jumping() {
+  jumpingelement.classList.toggle('jumping')
+}
