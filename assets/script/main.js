@@ -85,3 +85,15 @@ shrinkelement.addEventListener('animationend', shrink)
 function shrink() {
   shrinkelement.classList.toggle('shrink')
 }
+
+
+// frontflip
+
+let frontflipelement = document.querySelector('a:nth-of-type(8)')
+
+frontflipelement.addEventListener('click', frontflip)
+frontflipelement.addEventListener('transitionend', frontflip)
+
+function frontflip() {
+  frontflipelement.classList.toggle('frontflip')
+}

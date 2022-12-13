@@ -190,3 +190,13 @@ a:nth-of-type(12) {
     transform: scale(1); 
   }
 }
+
+
+/* frontflip */
+
+.frontflip {
+  animation-name: frontflip;
+  animation-iteration-count: 1;
+  transition: 1s;
+  transform: rotateX(360deg);
+}
