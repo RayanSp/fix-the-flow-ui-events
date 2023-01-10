@@ -28,7 +28,7 @@ Javascript
  - .classList.toggle
 
 CSS
- - animation-iteration-coun
+ - animation-iteration-count
  - Keyframes
  - Animation-name
  - Animation-duration 
